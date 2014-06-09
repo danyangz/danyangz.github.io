@@ -1,23 +1,42 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #eee;
+  background-color: #FCFCFC;
 }
 
 .content {
 	max-width: 700px;
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-bottom: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	background-color: #fff;
-	border-radius: 10px;
+	margin-bottom: auto;
+	border-radius: 0px;
 }
 
 #avatar {
-	float: right;
-	margin-top: -190px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
 	margin-right: 20px;
-	width: 200px;
-	border-radius: 5px;
+	margin-bottom: 12px;
+	width: 250px;
+	border-radius: 0px;
+}
+
+#short_bio{
+	margin-left: 280px;
+}
+
+#panel{
+	border-color: #FCFCFC;
+}
+
+#panel-head{
+	background-image: linear-gradient(to bottom, #d9edf7 0%, #d9edf7 100%);
+}
+
+#info{
+	background-color: #FFFFFF;
 }
