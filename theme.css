@@ -2,6 +2,7 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #FCFCFC;
+  min-width: 700px;
 }
 
 .content {
@@ -38,4 +39,5 @@ body {
   overflow: hidden;
   display:flex;
 	background-color: #FFFFFF;
+  width : 100%;
 }
