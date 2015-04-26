@@ -21,12 +21,9 @@ body {
 	margin-top: 20px;
 	margin-right: 20px;
 	margin-bottom: 12px;
-	width: 250px;
+	width: 30%;
+  height: 100%;
 	border-radius: 0px;
-}
-
-#short_bio{
-	margin-left: 280px;
 }
 
 #panel{
@@ -38,5 +35,7 @@ body {
 }
 
 #info{
+  overflow: hidden;
+  display:flex;
 	background-color: #FFFFFF;
 }
