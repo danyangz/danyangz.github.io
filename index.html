@@ -1,213 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="5caI6ZPR9QTa1tgUaG9CKTWK5cTVzfHnTftn3fOTNh0" />
-    <title>Danyang Zhuo</title>
 
+    <!-- Bootstrap CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="theme.css" rel="stylesheet">
+
+    <title>Danyang Zhuo</title>
   </head>
   <body>
-    <div class="content">
-      <div class="page-header" id="info">
-        <img src="personal.jpg" id="avatar">
-        <div id="short_bio">
-          <h2 style="margin-top:30px">Danyang Zhuo</h2>
-          <h4>Assistant Professor</h4>
-          <h4><a href="https://www.cs.duke.edu/">Department of Computer Science</a></h4>
-          <h4><a href="https://duke.edu/">Duke University</a></h4>
-          <h4>danyang@cs.duke.edu</h4>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="index.html">Danyang Zhuo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="papers.html">Papers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row justify-content-between">
+        <div class="col-4">
+          <img src="personal.jpg" id="avatar">
+        </div>
+        <div class="col-7">
+          <h2>Danyang Zhuo</h2>
+          <h5>Assistant Professor</h5>
+          <h5><a href="https://www.cs.duke.edu/">Department of Computer Science</a></h5>
+          <h5><a href="https://duke.edu/">Duke University</a></h5>
+          <h5><a href="mailto:someone@yoursite.com">danyang@cs.duke.edu</a></h5>
+          </p>
         </div>
       </div>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Biography</h3>
-        </div>
-        <div class="panel-body">
-         I am an assistant professor in the Department of Computer Science at Duke University. Before Duke, I was a postdoctoral researcher in the <a href="https://rise.cs.berkeley.edu/">RISE lab</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a>, working with Professor <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a>. I completed my Ph.D. in the <a href="http://www.cs.washington.edu/">Paul G. Allen School of Computer Science and Engineering</a> at <a href="http://www.washington.edu/">University of Washington</a>, advised by Professor <a href="http://www.cs.washington.edu/people/faculty/tom/">Tom Anderson</a> and Professor <a href="http://www.cs.washington.edu/people/faculty/arvind/">Arvind Krishnamurthy</a>. My reseach has received FAST Best Paper Award (2021), IBM Academic Award (2021), and Amazon Research Award (2021).
-         <br>
-         <br>
-         <a href="CV.pdf">[Curriculum Vitae]</a>
-         <br>
-         <br>
-         <strong>I am always recruiting computer science PhD students. Send me an email with your resume if you are interested in building cool computer systems with me!</strong>
-         <br>
-         <br>
-         <strong>If you are a Duke Undergrad/MS student and are interested in doing research with me, send me an email.</strong>
-        </div>
+      <div class="alert alert-dark" role="alert">
+        I am always recruiting computer science PhD students. Send me an email with your resume if you are interested in building cool computer systems with me!
       </div>
+      
+      <hr>
+      <h4>Biography</h4>
+      <p>
+        I am an assistant professor in the Department of Computer Science at Duke University. Before Duke, I was a postdoctoral researcher in the <a href="https://rise.cs.berkeley.edu/">RISE lab</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a>, working with Professor <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a>. I completed my Ph.D. in the <a href="http://www.cs.washington.edu/">Paul G. Allen School of Computer Science and Engineering</a> at <a href="http://www.washington.edu/">University of Washington</a>, advised by Professor <a href="http://www.cs.washington.edu/people/faculty/tom/">Tom Anderson</a> and Professor <a href="http://www.cs.washington.edu/people/faculty/arvind/">Arvind Krishnamurthy</a>. My reseach has received FAST Best Paper Award (2021), IBM Academic Award (2021), and Amazon Research Award (2021).
+        <br><br>
+        <a href="CV.pdf">[Curriculum Vitae]</a>
+      </p>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Research</h3>
-        </div>
-        <div class="panel-body">
-        My students and I build efficient, extensible, and reliable systems to support data-intensive applications (e.g., deep learning, big data analytics, packet processing).
-        We use a broad set of techniques, including software architecture design, programming languages, and machine learning.
-      </div>
+      <hr>
+      <h4>Research</h4>
+      <p>
+        My students and I build efficient, extensible, and reliable systems to support data-intensive applications (e.g., deep learning, big data analytics, packet processing). We use a broad set of techniques, including software architecture design, programming languages, and machine learning.
+        <br><br>
+        <a href="papers.html">[Papers]</a>
+      </p>
 
+      <hr>
+      <h4>Teaching</h4>
+      <p>
+        <ul>
+          <li>
+            Fall 2021: <a href="https://courses.cs.duke.edu/fall21/compsci310/">Introduction to Operating Systems (CPS 310)</a>
+          </li>
+          <li>
+            Fall 2020: <a href="https://courses.cs.duke.edu/fall20/compsci510/">Advanced Operating Systems (CPS 510)</a>
+          </li>
+        </ul>
+      </p>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Teaching</h3>
-        </div>
-        <div class="panel-body">
-        Fall 2021: <a href="https://courses.cs.duke.edu/fall21/compsci310/">Introduction to Operating Systems (CPS 310)</a> <br>
-        Fall 2020: <a href="https://courses.cs.duke.edu/fall20/compsci510/">Advanced Operating Systems (CPS 510)</a>
-        </div>
-      </div>
+      <hr>
+      <h4>Students</h4>
+      <p>
+        Current PhD students: Jingrong Chen, Xinhao Kong, Guozhen She<br>
+        Current MS students: Wei Zhang</a>
+      </p>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Students</h3>
-        </div>
-        <div class="panel-body">
-          Current PhD students: Jingrong Chen, Xinhao Kong, Guozhen She<br>
-          Current MS students: Wei Zhang
-        </div>
-        <div class="panel-body">
-          I also work closely with Samantha Miller (UW), Kaiyuan Zhang (UW), Zhuohan Li (UC Berkeley), Siyuan Zhuang (UC Berkeley)
-        </div>
-      </div>
+      <hr>
+      <h4>Service</h4>
+      <p>
+        <ul>
+          <li>
+            2022: FAST
+          </li>
+          <li>
+            2021: CoNEXT
+          </li>
+          <li>
+            2020: SIGCOMM
+          </li>
+        </ul>
+      </p>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Publications</h3>
-        </div>
-        <div class="panel-body">
-          <a href="papers/ICML21-TeraPipe.pdf">TeraPipe: Token-Level Pipeline Parallelism for Training Large-Scale Language Models.</a> <br>
-          Zhuohan Li, Siyuan Zhuang, Shiyuan Guo, Danyang Zhuo, Hao Zhang, Dawn Song, Ion Stoica.<br>
-          <em>ICML 2021</em><br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/SIGCOMM21-Hoplite.pdf">Hoplite: Efficient and Fault-Tolerant Collective Communication for Task-Based Distributed Systems.</a> <br>
-          Siyuan Zhuang*, Zhuohan Li*, Danyang Zhuo, Stephanie Wang, Eric Liang, Robert Nishihara, Philipp Moritz, Ion Stoica. (*equal contribution)<br>
-          <em>SIGCOMM 2021</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/ITC21-DOJoin.pdf"> Differentially Oblivious Database Joins: Overcoming the Worst-Case Curse of Fully Oblivious Algorithms. </a> <br>
-          Shumo Chu*, Danyang Zhuo*, Elaine Shi*, T-H. Hubert Chan*. (*random author order)<br>
-           <em>ITC 2021</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="https://www.usenix.org/publications/loginonline/high-velocity-kernel-file-systems-bento">High Velocity Kernel File Systems with Bento.</a> <br>
-          Samantha Miller, Kaiyuan Zhang, Mengqi Chen, Ryan Jennings, Ang Chen, Danyang Zhuo, Thomas Anderson.<br>
-          <em>USENIX ;login: 2021</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/HotOS21-IncreOS.pdf"> An Incremental Path Towards a Safer OS Kernel. </a> <br>
-          Jialin Li, Samantha Miller, Danyang Zhuo, Ang Chen, Jon Howell, Thomas Anderson. <br>
-           <em>HotOS 2021</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/ICLR21-Phase.pdf">On InstaHide, Phase Retrieval, and Sparse Matrix Factorization.</a> <br>
-          Sitan Chen*, Xiaoxiao Li*, Zhao Song*, Danyang Zhuo*. (*alphabetic author order)<br>
-          <em>ICLR 2021</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/FAST21-Bento.pdf">High Velocity Kernel File Systems with Bento.</a> <br>
-          Samantha Miller, Kaiyuan Zhang, Mengqi Chen, Ryan Jennings, Ang Chen, Danyang Zhuo, Thomas Anderson.<br>
-          <em>FAST 2021</em> <br>
-          <strong>Best Paper Award</strong> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/OSDI20-Ansor.pdf">Ansor: Generating High-Performance Tensor Programs for Deep Learning. </a> <br>
-          Lianmin Zheng, Chengfan Jia, Minmin Sun, Zhao Wu, Cody Hao Yu, Ameer Haj-Ali, Yida Wang, Jun Yang, Danyang Zhuo, Koushik Sen, Joseph E. Gonzalez, Ion Stoica.<br>
-           <em>OSDI 2020</em> <br>
-        </div>
-        <div class="panel-body">
-          <a href="papers/SIGCOMM20-Gallium.pdf"> Gallium: Automated Software Middlebox Offloading to Programmable Switches. </a> <br>
-           Kaiyuan Zhang, Danyang Zhuo, Arvind Krishnamurthy. <br>
-           <em>SIGCOMM 2020</em> <br>
-        </div>
-        <div class="panel-body">
-        <a href="papers/NSDI20-Gravel.pdf"> Automated Verification of Customizable Middlebox Properties with Gravel. </a> <br>
-         Kaiyuan Zhang, Danyang Zhuo, Aditya Akella, Arvind Krishnamurthy, Xi Wang. <br>
-         <em>NSDI 2020</em> <br>
-        </div>
-        <div class="panel-body">
-        <a href="papers/HotOS19-Stone.pdf"> Practical Safe Linux Kernel Extensibility. </a> <br>
-         Samantha Miller, Kaiyuan Zhang, Danyang Zhuo, Shibin Xu, Arvind Krishnamurthy, Thomas Anderson. <br>
-         <em>HotOS 2019</em> <br>
-        </div>
-        <div class="panel-body">
-         <a href="papers/NSDI19-Slim.pdf">Slim: OS Kernel Support for a Low-Overhead Container Overlay Network. </a> <br>
-         Danyang Zhuo, Kaiyuan Zhang, Yibo Zhu, Hongqiang Harry Liu, Matthew Rockett, Arvind Krishnamurthy, Thomas Anderson. <br>
-         <em>NSDI 2019</em> <br>
-        </div>
-        <div class="panel-body">
-         <a href="papers/SIGCOMM17-CorrOpt.pdf">Understanding and Mitigating Packet Corruption in Data Center Networks. </a> <br>
-         Danyang Zhuo, Monia Ghobadi, Ratul Mahajan, Klaus-Tycho Förster, Arvind Krishnamurthy, Thomas Anderson. <br>
-         <em>SIGCOMM 2017</em>
-        </div>
-        <div class="panel-body">
-         <a href="papers/NSDI17-RAIL.pdf">RAIL: A Case for Redundant Arrays of Inexpensive Links in Data Center Networks. </a> <br>
-         Danyang Zhuo, Monia Ghobadi, Ratul Mahajan, Amar Phanishayee, Xuan Kelvin Zou, Hang Guan, Arvind Krishnamurthy, Thomas Anderson. <br>
-         <em>NSDI 2017</em>
-        </div>
-        <div class="panel-body">
-         <a href="papers/HotNets16-Canaries.pdf">Canaries in the Network. </a> <br>
-         Danyang Zhuo, Qiao Zhang, Xin Yang, Vincent Liu.  <br>
-         <em>HotNets 2016</em>
-        </div>
-        <div class="panel-body">
-         <a href="papers/HotNets16-RackCC.pdf"> RackCC: Rack-level Congestion Control. </a> <br>
-         Danyang Zhuo, Qiao Zhang, Vincent Liu, Arvind Krishnamurthy and Thomas Anderson.  <br>
-         <em>HotNets 2016</em>
-        </div>
-        <div class="panel-body">
-         <a href="papers/CoNext15-Subways.pdf">Subways: A Case for Redundant, Inexpensive Data Center Edge Links. </a> <br>
-         Vincent Liu, Danyang Zhuo, Simon Peter, Arvind Krishnamurthy and Thomas Anderson. <br>
-         <em>CoNEXT 2015</em>
-        </div>
-        <div class="panel-body">
-         <a href="papers/APSys14-MFT.pdf">Machine Fault Tolerance for Reliable Datacenter Systems.</a> <br>
-         Danyang Zhuo*, Qiao Zhang*, Dan Ports, Arvind Krishnamurthy and Thomas Anderson. (*equal contribution) <br>
-         <em>APSys 2014</em>
-        </div>
-      </div>
+      <hr>
+      <h4>Acknowledgement</h4>
+      <p>
+        I thank the following organizations and companies for their generous support: <br>
+        <img src="logo/amazon.jpeg" id="organization">
+        <img src="logo/ibm.svg" id="organization">
+      </p>
 
+    </div>
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Other Papers</h3>
-        </div>
-        <div class="panel-body">
-          <a href="https://arxiv.org/pdf/2011.11877.pdf">InstaHide's Sample Complexity When Mixing Two Private Images.</a> <br>
-          Baihe Huang*, Zhao Song*, Runzhou Tao*, Ruizhe Zhang*, Danyang Zhuo*. (*alphabetic author order)<br>
-        </div>
-        <div class="panel-body">
-          <a href="https://arxiv.org/pdf/1804.06945.pdf">Volur: Concurrent Edge/Core Route Control in Data Center Networks.</a> <br>
-          Qiao Zhang, Danyang Zhuo, Vincent Liu, Petr Lapukhov, Simon Peter, Arvind Krishnamurthy, Thomas Anderson.<br>
-        </div>
-      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
 
-      <div class="panel panel-default" id="panel">
-        <div class="panel-heading" id="panel-head">
-         <h3 class="panel-title">Funding</h3>
-        </div>
-        <div class="panel-body">
-          I thank the following organizations and companies for their generous support: <br>
-          <img src="logo/amazon.jpeg" id="organization">
-          <img src="logo/ibm.svg" id="organization">
-        </div>
-      </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="dist/js/bootstrap.min.js"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-                ga('create', 'UA-62415153-1', 'auto');
-                  ga('send', 'pageview');
-
-    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
