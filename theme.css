@@ -55,6 +55,10 @@ p {
     height: 150px;
   }
 
+	h2 {
+		font-size: 15pt;
+	}
+
   h5 {
     font-size: 12pt;
 	}
