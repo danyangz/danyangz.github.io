@@ -1,15 +1,6 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-62415153-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-62415153-1');
-    </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,11 +39,10 @@
         <div class="col-7">
           <h2>Danyang Zhuo</h2>
           <h5>Assistant Professor</h5>
-          <h5><a href="https://systems.cs.duke.edu/">Duke System Group</a></h5>
+          <h5><a href="https://systems.cs.duke.edu/">Duke Systems Group</a></h5>
           <h5><a href="https://www.cs.duke.edu/">Department of Computer Science</a></h5>
           <h5><a href="https://duke.edu/">Duke University</a></h5>
           <h5><a href="mailto:danyang@cs.duke.edu">danyang@cs.duke.edu</a></h5>
-          </p>
         </div>
       </div>
 
@@ -67,160 +57,133 @@
       <hr>
       <h4>Research</h4>
       <p>
-        My research interests are (1) datacenter and cloud computing and (2) machine learning systems. Some current research projects are:
+        My research mainly spans two threads: (1) datacenter networking: RDMA, collective communication, application networks; (2) GPU systems: training, inference, multiplexing.
       </p>
         <ul>
-          <li> Building new abstractions and systems to do GPU multi-tasking, including:
+          <li>Networking
             <ul>
-              <li> <a href="papers/OSDI26-Nixie.pdf">Nixie (OSDI26)</a>, a system that allows multiple applications efficiently share consumer-grade GPUs.</li>
+              <li>Remote Direct Memory Access (RDMA): <a href="papers/NSDI24-Harmonic.pdf">Harmonic (NSDI24)</a>, <a href="papers/NSDI23-Husky.pdf">Husky (NSDI23)</a>, <a href="papers/NSDI22-Collie.pdf">Collie (NSDI22)</a>.</li>
+              <li>Collective Communication: <a href="papers/SIGCOMM24-MCCS.pdf">MCCS (SIGCOMM24)</a>, <a href="papers/NSDI22-NetHint.pdf">NetHint (NSDI22)</a>, <a href="papers/SIGCOMM21-Hoplite.pdf">Hoplite (SIGCOMM21)</a>.</li>
+              <li>Remote Procedure Call (RPC) and Application Networking: <a href="papers/NSDI25-ADN.pdf">ADN (NSDI25)</a>, <a href="papers/NSDI23-mRPC.pdf">mRPC (NSDI23)</a>.</li>
+              <li>Software-Hardware Co-Design: <a href="papers/ISCA24-HAL.pdf">HAL (ISCA24)</a>, <a href="papers/SIGCOMM20-Gallium.pdf">Gallium (SIGCOMM20)</a>.</li>
             </ul>
-          <li> A series of machine learning system research, including:
+          </li>
+          <li>GPUs
             <ul>
-              <li> <a href="papers/NSDI26-Phantora.pdf">Phantora (NSDI26)</a>, a GPU cluster simulator that supports unmodified LLM training frameworks.</li>
-              <li> <a href="papers/SIGMOD26-Curator.pdf">Curator (SIGMOD26)</a>, a vector index that supports low-selectivity label filters efficiently.</li>
-              <li> <a href="papers/AAAI26-FlashSVD.pdf">FlashSVD (AAAI26)</a>, a GPU memory efficient inference method for low-rank models.</li>
-              <li> <a href="papers/MLSys26-AXLearn.pdf">AXLearn (MLSys26)</a>, Apple's modular, hardware-agnostic model training framework.</li>
-              <li> <a href="papers/MICRO25-LLM265.pdf">LLM.265 (MICRO25)</a>, using video codecs to compress tensors.</li>
-              <li> <a href="papers/NeurIPS25-KVCOMM.pdf">KVCOMM (NeurIPS25)</a>, sharing key-value caches in multi-agent systems.</li>
-              <li> <a href="papers/COLM25-Plato.pdf">Plato (COLM25)</a>, using planed parallel decoding to speed up large language model inference.</li>
-              <li> <a href="papers/OSDI24-VTC.pdf">VTC (OSDI24)</a>, a large language model serving system with fairness guarantees.</li>
-              <li> <a href="papers/MLSys24-Punica.pdf">Punica (MLSys24)</a>, a serving system for LoRA fine-tuned large language models.</li>
-              <li> <a href="papers/VLDB23-JellyBean.pdf">JellyBean (VLDB23)</a>, a serving framework for ML workflows.</li>
-              <li> <a href="papers/OSDI22-Alpa.pdf">Alpa (OSDI22)</a>, a training framework for large neural network models.</li>
-              <li> <a href="papers/ICML21-TeraPipe.pdf">TeraPipe (ICML21)</a>, a new parallelism dimension for training large language models.</li>
-              <li> <a href="papers/OSDI20-Ansor.pdf">Ansor (OSDI20)</a>, a compiler to generate efficient code for hardware accelerators.</li>
+              <li>Training: <a href="papers/NSDI26-Phantora.pdf">Phantora (NSDI26)</a>, <a href="papers/MLSys26-AXLearn.pdf">AXLearn (MLSys26)</a>, <a href="papers/OSDI22-Alpa.pdf">Alpa (OSDI22)</a>, <a href="papers/ICML21-TeraPipe.pdf">TeraPipe (ICML21)</a>.</li>
+              <li>Inference: <a href="papers/NeurIPS25-KVCOMM.pdf">KVCOMM (NeurIPS25)</a>, <a href="papers/COLM25-Plato.pdf">Plato (COLM25)</a>, <a href="papers/OSDI24-VTC.pdf">VTC (OSDI24)</a>, <a href="papers/MLSys24-Punica.pdf">Punica (MLSys24)</a>, <a href="papers/VLDB23-JellyBean.pdf">JellyBean (VLDB23)</a>.</li>
+              <li>Kernels & Compilers: <a href="papers/AAAI26-FlashSVD.pdf">FlashSVD (AAAI26)</a>, <a href="papers/OSDI20-Ansor.pdf">Ansor (OSDI20)</a>.</li>
+              <li>Multiplexing: <a href="papers/OSDI26-Nixie.pdf">Nixie (OSDI26)</a>.</li>
+              <li>Compression: <a href="papers/MICRO25-LLM265.pdf">LLM.265 (MICRO25)</a>.</li>
+            </ul>
+          </li>
+          <li>Side interest: applying programming language and formal methods for system software.
+            <ul>
+              <li>Rust for Operating Systems: <a href="papers/EuroSys24-Enoki.pdf">Enoki (EuroSys24)</a>, <a href="papers/FAST21-Bento.pdf">Bento (FAST21)</a>.</li>
+              <li>SMT-based Software Verification: <a href="papers/VLDB22-Lightning.pdf">Lightning (VLDB22)</a>, <a href="papers/NSDI20-Gravel.pdf">Gravel (NSDI20)</a>.</li>
             </ul>
           </li>
         </ul>
-      <p>
-        Past research projects include:
-      </p>
-      <ul>
-        <li> <a href="https://github.com/phoenix-dataplane/phoenix">Phoenix</a>, a system service that exposes common application-level abstractions for speed and manageability. Its components include:
-          <ul>
-            <li> <a href="papers/SIGCOMM24-MCCS.pdf">MCCS (SIGCOMM24)</a>, an collective communication system that decouples algorithm choice from applications, allowing the system to adjust algorithm choice without application interruption. </li>
-            <li> <a href="papers/NSDI23-mRPC.pdf">mRPC (NSDI23)</a>, an RPC architecture that supports efficient RPC-level policies and live upgradability. </li>
-          </ul>
-        </li>
-        <li> <a href="https://github.com/host-bench/rdma-bench">RDMABench</a>, a test framework for RDMA software/hardware stack. Its components include:
-          <ul>
-            <li> <a href="papers/NSDI23-Husky.pdf">Husky (NSDI23)</a>, a test suite for RDMA performance isolation for multi-tenancy.  Our follow-up work, <a href="papers/NSDI24-Harmonic.pdf">Harmonic (NSDI24)</a>, is the first step towards the performance isolation issues found by Husky. </li>
-            <li> <a href="papers/NSDI22-Collie.pdf">Collie (NSDI22)</a>, a test suite for RDMA performance anomalies.</li>
-          </ul>
-        </li>
-        <li> A series of exploration of using Rust in operating system development, including:
-          <ul>
-            <li> <a href="papers/EuroSys24-Enoki.pdf">Enoki (EuroSys24)</a>, a operating system scheduler framework in Rust.</li>
-            <li> <a href="papers/FAST21-Bento.pdf">Bento (FAST21)</a>, a file system framework in Rust.</li>
-          </ul>
-        </li>
-      </ul>
-      <p>
-        <a href="publications.html">[All Publications]</a>
-      </p>
-
       <hr>
       <h4>Students</h4>
       <p>
         I am very fortunate to work with a fantastic group of PhD students.
         <strong> I am recruiting PhD students for Fall 2027. Please apply to Duke CS if you are interested in working with me!</strong>
-        <ul>
-          <li><a href="https://zhuochen.me/">Zhuo Chen</a></li>
-          <li>Alexander Du (with Matthew Lentz)</li>
-          <li>Yicheng Jin</li>
-          <li><a href="https://qdelta.github.io/">Jianxing Qin</a></li>
-          <li><a href="https://me.eastonx.dev">Yechen Xu</a></li>
-          <li>Yuncheng Yao (with Tingjun Chen)</li>
-        </ul>
       </p>
+      <ul>
+        <li><a href="https://zhuochen.me/">Zhuo Chen</a></li>
+        <li>Alexander Du (with Matthew Lentz)</li>
+        <li>Yicheng Jin</li>
+        <li><a href="https://qdelta.github.io/">Jianxing Qin</a></li>
+        <li><a href="https://me.eastonx.dev">Yechen Xu</a></li>
+        <li>Yuncheng Yao (with Tingjun Chen)</li>
+      </ul>
       <p>
         Past PhD Students:
-        <ul>
-          <li><a href="https://cjr.host/">Jingrong Chen</a> (2025). Uber.</li>
-          <li><a href="https://www.yongjiwu.me/">Yongji Wu</a> (2024, with Matthew Lentz). Postdoc at UC Berkeley.</li>
-          <li><a href="https://sigempty.github.io/">Xinhao Kong</a> (2024). Anthropic.</li>
-          <li><a href="https://www.linkedin.com/in/samantha-miller-284487a1/">Samantha Miller</a> (2023, with Tom Anderson). Databricks.</li>
-        </ul>
       </p>
+      <ul>
+        <li><a href="https://cjr.host/">Jingrong Chen</a> (2025). Uber.</li>
+        <li><a href="https://www.yongjiwu.me/">Yongji Wu</a> (2024, with Matthew Lentz). Postdoc at UC Berkeley.</li>
+        <li><a href="https://sigempty.github.io/">Xinhao Kong</a> (2024). Anthropic.</li>
+        <li><a href="https://www.linkedin.com/in/samantha-miller-284487a1/">Samantha Miller</a> (2023, with Tom Anderson). Databricks.</li>
+      </ul>
       <hr>
       <h4>Teaching</h4>
-      <p>
-        <ul>
-          <li>
-            Fall 2026: <a href="https://courses.cs.duke.edu/fall26/compsci512/">Distributed Systems (CompSci 512)</a>
-          </li>
-          <li>
-            Spring 2026: <a href="https://courses.cs.duke.edu/spring26/compsci590.6/">Systems for Machine Learning (CompSci 590.06)</a>
-          </li>
-          <li>
-            Fall 2025: <a href="https://courses.cs.duke.edu/fall25/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
-          </li>
-          <li>
-            Spring 2025: <a href="https://courses.cs.duke.edu/spring25/compsci590.5/">Systems for Machine Learning (CompSci 590.05)</a>
-          </li>
-          <li>
-            Spring 2024: <a href="https://courses.cs.duke.edu/spring24/compsci210d/">Introduction to Computer Systems (CompSci 210)</a>
-          </li>
-          <li>
-            Spring 2023: <a href="https://courses.cs.duke.edu/spring23/compsci512/">Distributed Systems (CompSci 512)</a>
-          </li>
-          <li>
-            Fall 2022: <a href="https://courses.cs.duke.edu/fall22/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
-          </li>
-          <li>
-            Spring 2022: <a href="https://courses.cs.duke.edu/spring22/compsci590.4/">Data Center Systems (CompSci 590.04)</a>
-          </li>
-          <li>
-            Fall 2021: <a href="https://courses.cs.duke.edu/fall21/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
-          </li>
-          <li>
-            Fall 2020: <a href="https://courses.cs.duke.edu/fall20/compsci510/">Advanced Operating Systems (CompSci 510)</a>
-          </li>
-        </ul>
-      </p>
+      <ul>
+        <li>
+          Fall 2026: <a href="https://courses.cs.duke.edu/fall26/compsci512/">Distributed Systems (CompSci 512)</a>
+        </li>
+        <li>
+          Spring 2026: <a href="https://courses.cs.duke.edu/spring26/compsci590.6/">Systems for Machine Learning (CompSci 590.06)</a>
+        </li>
+        <li>
+          Fall 2025: <a href="https://courses.cs.duke.edu/fall25/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
+        </li>
+        <li>
+          Spring 2025: <a href="https://courses.cs.duke.edu/spring25/compsci590.5/">Systems for Machine Learning (CompSci 590.05)</a>
+        </li>
+        <li>
+          Spring 2024: <a href="https://courses.cs.duke.edu/spring24/compsci210d/">Introduction to Computer Systems (CompSci 210)</a>
+        </li>
+        <li>
+          Spring 2023: <a href="https://courses.cs.duke.edu/spring23/compsci512/">Distributed Systems (CompSci 512)</a>
+        </li>
+        <li>
+          Fall 2022: <a href="https://courses.cs.duke.edu/fall22/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
+        </li>
+        <li>
+          Spring 2022: <a href="https://courses.cs.duke.edu/spring22/compsci590.4/">Data Center Systems (CompSci 590.04)</a>
+        </li>
+        <li>
+          Fall 2021: <a href="https://courses.cs.duke.edu/fall21/compsci310/">Introduction to Operating Systems (CompSci 310)</a>
+        </li>
+        <li>
+          Fall 2020: <a href="https://courses.cs.duke.edu/fall20/compsci510/">Advanced Operating Systems (CompSci 510)</a>
+        </li>
+      </ul>
 
       <hr>
       <h4>Service</h4>
       <p>
         <strong>Organizer:</strong>
-        <ul>
-          <li>
-            2026: Co-Chair of SIGCOMM Workshop on Networks for AI Computing (NAIC)
-          </li>
-          <li>
-            2022: Co-Chair for SIGCOMM Artifact Evaluation Committee
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          2026: Co-Chair of SIGCOMM Workshop on Networks for AI Computing (NAIC)
+        </li>
+        <li>
+          2022: Co-Chair for SIGCOMM Artifact Evaluation Committee
+        </li>
+      </ul>
       <p>
         <strong>Technical Program Committee:</strong>
-        <ul>
-          <li>
-            2027: NSDI
-          </li>
-          <li>
-            2026: ASPLOS, MLSys, NSDI, SIGMOD
-          </li>
-          <li>
-            2025: APNET, NSDI, SIGCOMM, SIGMOD
-          </li>
-          <li>
-            2024: APNET, CoNEXT, NSDI, SIGMOD
-          </li>
-          <li>
-            2023: APNET, NSDI, SIGCOMM
-          </li>
-          <li>
-            2022: APNET, FAST, NSDI, SIGCOMM
-          </li>
-          <li>
-            2021: CoNEXT
-          </li>
-          <li>
-            2020: SIGCOMM
-          </li>
-        </ul>
       </p>
+      <ul>
+        <li>
+          2027: NSDI
+        </li>
+        <li>
+          2026: ASPLOS, MLSys, NSDI, SIGMOD
+        </li>
+        <li>
+          2025: APNET, NSDI, SIGCOMM, SIGMOD
+        </li>
+        <li>
+          2024: APNET, CoNEXT, NSDI, SIGMOD
+        </li>
+        <li>
+          2023: APNET, NSDI, SIGCOMM
+        </li>
+        <li>
+          2022: APNET, FAST, NSDI, SIGCOMM
+        </li>
+        <li>
+          2021: CoNEXT
+        </li>
+        <li>
+          2020: SIGCOMM
+        </li>
+      </ul>
       <hr>
       <h4>Acknowledgement</h4>
       <p>
